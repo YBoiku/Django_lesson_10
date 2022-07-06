@@ -51,3 +51,7 @@ class Human(models.Model):
 
     # def __repr__(self) -> str:
     #     return
+
+
+class SuperHuman(Human):
+    level = models.PositiveIntegerField('Level', help_text='Level of power')
